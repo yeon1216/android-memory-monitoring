@@ -4,7 +4,7 @@ python script를 이용하여 현재 실행중인 안드로이드 특정 프로�
 
 # 사용법
 1. memory_monitoring.py에 모니터링 할 프로세스의 패키지 이름을 입력해주세요
-1. memory_monitoring.py를 실행해주세요. memory_monitoring.py를 실행하면 해당 프로세스의 메모리 사용량이 실시간으로 모니터링 됩니다.<br>
+1. memory_monitoring.py를 실행해주세요.<br> memory_monitoring.py를 실행하면 해당 프로세스의 메모리 사용량이 실시간으로 모니터링 됩니다.<br>
 1. 
 
 ### 참고사항
