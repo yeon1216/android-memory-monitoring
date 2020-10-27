@@ -25,7 +25,6 @@ while True:
     # tr -d ',' : , 문자열 제거
     # tr -d ' ' : 공백 제거
     # awk -F " " '{ split($0, array, "K");print array[1]; }' : K를 이용한 문자열 자르기
-    #  >> meminfo.txt : meminfo.txt에 결과 문자열 write
     cmd = ['adb','shell','dumpsys','meminfo','|','grep',packageName,'|','xargs echo','|','tr','-d','\',\'','|','tr','-d','\' \'','|','awk','-F','" "','\'{ split($0, array, "K");print array[1]; }\'']
     
     # 명령어 실행 후 반환되는 결과를 파일에 저장
