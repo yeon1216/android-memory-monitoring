@@ -1,7 +1,8 @@
-안드로이드 메모리 모니터링
+# 안드로이드 메모리 모니터링
 
 
-
+(Hyphens)
+# LICENSE
 MIT License
 
 Copyright (c) 2020 Kim Sung Yeon
