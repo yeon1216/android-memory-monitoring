@@ -20,7 +20,7 @@ while True:
     testTime = ((int)(tempTime - startTime))
     # shell script 명령어 작성
     # adb shell dumpsys meminfo : 안드로이드폰에서 실행중인 프로세스 메모리 정보 read
-    # grep com.vaultmicro.camerafi.live : com.vaultmicro.camerafi.live와 일치하는 부분 find
+    # grep packageName : packageName과 일치하는 부분 find
     # xargs echo : 결과물을 한줄로 만들어줌
     # tr -d ',' : , 문자열 제거
     # tr -d ' ' : 공백 제거
