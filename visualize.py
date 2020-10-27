@@ -16,7 +16,7 @@ for tempStr in timeMemoryList:
     if tempList[1].strip()=='':
         continue
     timeList.append(tempList[0])
-    memoryList.append((int)(tempList[1])/1024)
+    memoryList.append((int)(tempList[1]))
 
 plt.plot(timeList,memoryList)
 plt.show()
