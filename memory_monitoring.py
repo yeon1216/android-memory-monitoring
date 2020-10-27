@@ -15,9 +15,9 @@ testResultWriteFile = open("meminfo.txt",'w')
 
 while True:
     # 현재 시간
-    # tempTime = datetime.datetime.now()
     tempTime = time.time()
     testTime = ((int)(tempTime - startTime))
+    
     # shell script 명령어 작성
     # adb shell dumpsys meminfo : 안드로이드폰에서 실행중인 프로세스 메모리 정보 read
     # grep packageName : packageName과 일치하는 부분 find
@@ -27,10 +27,13 @@ while True:
     # awk -F " " '{ split($0, array, "K");print array[1]; }' : K를 이용한 문자열 자르기
     #  >> meminfo.txt : meminfo.txt에 결과 문자열 write
     cmd = ['adb','shell','dumpsys','meminfo','|','grep',packageName,'|','xargs echo','|','tr','-d','\',\'','|','tr','-d','\' \'','|','awk','-F','" "','\'{ split($0, array, "K");print array[1]; }\'']
+    
     # 명령어 실행 후 반환되는 결과를 파일에 저장
     fd_popen = subprocess.Popen(cmd,stdout=subprocess.PIPE).stdout
+    
     # 파일에 저장된 결과를 읽고 utf-8로 인코딩
     tempTotalPSSMemory = (int)(fd_popen.read().strip().decode('utf-8'))//1024
+    
     # 파일 닫기
     fd_popen.close()
 
