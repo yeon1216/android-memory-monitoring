@@ -1,7 +1,8 @@
 # 안드로이드 메모리 모니터링
+python script와 shell script를 이용하여 현재 실행중인 안드로이드 특정 프로세스의 메모리를 모니터링 할 수 있습니다.
+메모리 측정 인자는 PSS를 사용하였습니다.
 
 
-(Hyphens)
 # LICENSE
 MIT License
 
