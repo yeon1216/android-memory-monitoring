@@ -3,7 +3,7 @@ python script를 이용하여 현재 실행중인 안드로이드 특정 프로�
 메모리 측정 인자는 PSS를 사용하였습니다.
 
 # 사용법
-1. memory_monitoring.py에 모니터링 할 프로세스의 패키지 이름을 입력해주세요
+1. memory_monitoring.py에 모니터링 할 프로세스의 패키지 이름을 입력해주세요.
 1. memory_monitoring.py를 실행해주세요.<br> memory_monitoring.py를 실행하면 해당 프로세스의 메모리 사용량이 실시간으로 모니터링 됩니다.<br>또한 메모리 측정값이 meminfo.txt에 기록됩니다.
 1. 메모리 모니터링을 끝내려면 'ctrl+c'를 이용하여 memory_monitoring.py를 종료해주세요.
 1. 메모리 모니터링 후에 visualize.py를 실행하면 meminfo.txt에 기록된 값을 이용하여 메모리 사용량 그래프를 그려줍니다.
