@@ -2,6 +2,13 @@
 python script와 shell script를 이용하여 현재 실행중인 안드로이드 특정 프로세스의 메모리를 모니터링 할 수 있습니다.
 메모리 측정 인자는 PSS를 사용하였습니다.
 
+# 사용법
+1. memory_monitoring.py 실행
+2. 
+
+## 주의사항
+PC에 한 대의 안드로이드 스마트폰만 연결되어있어야합니다.
+
 
 # LICENSE
 MIT License
